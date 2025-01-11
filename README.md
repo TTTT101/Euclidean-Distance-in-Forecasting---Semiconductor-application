@@ -6,19 +6,20 @@ Formula for Euclidean Distance:
 Given two points \( p = (p_1, p_2, \dots, p_n) \) and \( q = (q_1, q_2, \dots, q_n) \) in \( n \)-dimensional space, the Euclidean distance \( d(p, q) \) is calculated as:
 Given two points **p** = (p<sub>1</sub>, p<sub>2</sub>, ..., p<sub>n</sub>) and **q** = (q<sub>1</sub>, q<sub>2</sub>, ..., q<sub>n</sub>) in n-dimensional space, the Euclidean distance **d(p, q)** is calculated as:
 
-**d(p, q)** = √((q<sub>1</sub> - p<sub>1</sub>)² + (q<sub>2</sub> - p<sub>2</sub>)² + ... + (q<sub>n</sub> - p<sub>n</sub>)²)
+<img width="452" alt="Screenshot 2025-01-11 at 2 19 52 PM" src="https://github.com/user-attachments/assets/8a41c572-9882-4853-b90b-f50c00e20338" />
 
 ### Example in 2D Space
 
 If **p** = (x<sub>1</sub>, y<sub>1</sub>) and **q** = (x<sub>2</sub>, y<sub>2</sub>), the distance is:
 
-**d(p, q)** = √((x<sub>2</sub> - x<sub>1</sub>)² + (y<sub>2</sub> - y<sub>1</sub>)²)
+<img width="268" alt="Screenshot 2025-01-11 at 2 23 28 PM" src="https://github.com/user-attachments/assets/89441b96-adc4-43d3-8dbd-626b6eb32cbf" />
 
 ### Example in 3D Space
 
 If **p** = (x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>) and **q** = (x<sub>2</sub>, y<sub>2</sub>, z<sub>2</sub>), the distance is:
 
-**d(p, q)** = √((x<sub>2</sub> - x<sub>1</sub>)² + (y<sub>2</sub> - y<sub>1</sub>)² + (z<sub>2</sub> - z<sub>1</sub>)²)
+<img width="369" alt="Screenshot 2025-01-11 at 2 25 10 PM" src="https://github.com/user-attachments/assets/5d55321e-97ac-41b7-afce-44036be850ec" />
+
 
 
 ![istockphoto-1167267132-612x612](https://github.com/user-attachments/assets/dcf62277-0fcf-44c7-9e57-86adf6416ca5)
@@ -35,7 +36,7 @@ The data has two parts. The first one is provdied in csv format individually for
 
 In reality, raw data often requires a lot of clean up. So, the first parts of my script is to get them in the right format for later logic. Below is the definition of columns that have been used in later algorthim.
 
-#From PLA dataframe:
+### From PLA dataframe:
 
 SRROGD_um: Die size in X direction
 
@@ -54,7 +55,7 @@ OGDWidthOfPGDScribe_um: Die Space in X direction (return value)
 PGDWidthOfOGDScribe_um: Die Space in Y direction (return value)
 
 
-#From Items dataframe:
+### From Items dataframe:
 
 Die X (um): Die size in X direction
 
