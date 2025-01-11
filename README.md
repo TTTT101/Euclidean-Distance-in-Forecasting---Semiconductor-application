@@ -22,7 +22,10 @@ If **p** = (x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>) and **q** = (x<sub>2</s
 
 
 
-![istockphoto-1167267132-612x612](https://github.com/user-attachments/assets/dcf62277-0fcf-44c7-9e57-86adf6416ca5)
+
+
+                                      ![istockphoto-1167267132-612x612](https://github.com/user-attachments/assets/dcf62277-0fcf-44c7-9e57-86adf6416ca5)
+
 
 
 
@@ -70,6 +73,14 @@ DotDieArea: Combination of Dot Technology and Die Area in mm2
 FabDieArea: Combination of Fabrication Technology and Die Area in mm2
 
 
-## Visual Network Design
-
 ## Algorithm Implementation
+The logic is to match semiconductor features by proximity in the DotDieArea and FabDieArea datasets and prepare data for further statistical and forecasting steps.
+
+1. Libraries Imported: pandas, numpy, math, scipy, statsmodels, and statsmodels.formula.api.
+2. Main Logic:
+   - Define the function to compute the Euclidean distance between two points in 2D space. From our data, they are columns (Die X (um), Die Y(um)) and (SRROGD_um, SRRPGD_um).
+   - For DotDieArea, compute the distance between a specific row in "item_row" and all rows in a subset "pla_subset".
+   - Adds a new column called distance to the subsets.
+   - Find the nearest match based on spatial location -> find the rows with the smallest distance value.
+   - Repeat the same logic for FabDie Area if DotDieArea cannot be found.
+   
