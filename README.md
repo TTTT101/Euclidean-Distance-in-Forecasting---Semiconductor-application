@@ -24,7 +24,7 @@ If **p** = (x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>) and **q** = (x<sub>2</s
 
 
 
-                                      ![istockphoto-1167267132-612x612](https://github.com/user-attachments/assets/dcf62277-0fcf-44c7-9e57-86adf6416ca5)
+![istockphoto-1167267132-612x612](https://github.com/user-attachments/assets/dcf62277-0fcf-44c7-9e57-86adf6416ca5)
 
 
 
