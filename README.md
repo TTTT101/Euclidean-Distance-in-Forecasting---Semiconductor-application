@@ -2,26 +2,23 @@
 Known as the most common used metric in computer science, physics and maths for determining the distance between two points, the Euclidean Distance has various applications in machine learning, computer vision, physics and geometry. Some popular use-cases include clustering algorithms such as K-means and NNC, measuring similarity among features, or finding the shortest paths.
 
 Formula for Euclidean Distance:
+
 Given two points \( p = (p_1, p_2, \dots, p_n) \) and \( q = (q_1, q_2, \dots, q_n) \) in \( n \)-dimensional space, the Euclidean distance \( d(p, q) \) is calculated as:
+Given two points **p** = (p<sub>1</sub>, p<sub>2</sub>, ..., p<sub>n</sub>) and **q** = (q<sub>1</sub>, q<sub>2</sub>, ..., q<sub>n</sub>) in n-dimensional space, the Euclidean distance **d(p, q)** is calculated as:
 
-\[ d(p, q) = \sqrt{(q_1 - p_1)^2 + (q_2 - p_2)^2 + \dots + (q_n - p_n)^2} \]
+**d(p, q)** = √((q<sub>1</sub> - p<sub>1</sub>)² + (q<sub>2</sub> - p<sub>2</sub>)² + ... + (q<sub>n</sub> - p<sub>n</sub>)²)
 
-**Example in 2D Space:**
+### Example in 2D Space
 
-If \( p = (x_1, y_1) \) and \( q = (x_2, y_2) \), the distance is:
+If **p** = (x<sub>1</sub>, y<sub>1</sub>) and **q** = (x<sub>2</sub>, y<sub>2</sub>), the distance is:
 
-\[ d(p, q) = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} \]
+**d(p, q)** = √((x<sub>2</sub> - x<sub>1</sub>)² + (y<sub>2</sub> - y<sub>1</sub>)²)
 
-**Example in 3D Space:**
+### Example in 3D Space
 
-If \( p = (x_1, y_1, z_1) \) and \( q = (x_2, y_2, z_2) \), the distance is:
+If **p** = (x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>) and **q** = (x<sub>2</sub>, y<sub>2</sub>, z<sub>2</sub>), the distance is:
 
-\[ d(p, q) = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2 + (z_2 - z_1)^2} \]
-
-
-<div align="center">
-  <img src="![istockphoto-1167267132-612x612](https://github.com/user-attachments/assets/dcf62277-0fcf-44c7-9e57-86adf6416ca5)" alt="Example Image" width="500">
-</div>
+**d(p, q)** = √((x<sub>2</sub> - x<sub>1</sub>)² + (y<sub>2</sub> - y<sub>1</sub>)² + (z<sub>2</sub> - z<sub>1</sub>)²)
 
 
 ![istockphoto-1167267132-612x612](https://github.com/user-attachments/assets/dcf62277-0fcf-44c7-9e57-86adf6416ca5)
