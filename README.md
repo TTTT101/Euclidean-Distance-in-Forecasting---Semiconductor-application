@@ -2,27 +2,26 @@
 Known as the most common used metric in computer science, physics and maths for determining the distance between two points, the Euclidean Distance has various applications in machine learning, computer vision, physics and geometry. Some popular use-cases include clustering algorithms such as K-means and NNC, measuring similarity among features, or finding the shortest paths.
 
 Formula for Euclidean Distance:
+Given two points \( p = (p_1, p_2, \dots, p_n) \) and \( q = (q_1, q_2, \dots, q_n) \) in \( n \)-dimensional space, the Euclidean distance \( d(p, q) \) is calculated as:
 
-Given two points  p = (p_1, p_2, \dots, p_n)  and  q = (q_1, q_2, \dots, q_n)  in  n -dimensional space, the Euclidean distance  d(p, q)  is calculated as:
+\[ d(p, q) = \sqrt{(q_1 - p_1)^2 + (q_2 - p_2)^2 + \dots + (q_n - p_n)^2} \]
 
+**Example in 2D Space:**
 
-d(p, q) = \sqrt{(q_1 - p_1)^2 + (q_2 - p_2)^2 + \dots + (q_n - p_n)^2}
+If \( p = (x_1, y_1) \) and \( q = (x_2, y_2) \), the distance is:
 
+\[ d(p, q) = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} \]
 
-Example in 2D Space:
+**Example in 3D Space:**
 
-If  p = (x_1, y_1)  and  q = (x_2, y_2) , the distance is:
+If \( p = (x_1, y_1, z_1) \) and \( q = (x_2, y_2, z_2) \), the distance is:
 
-d(p, q) = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}
-
-
-Example in 3D Space:
-
-If  p = (x_1, y_1, z_1)  and  q = (x_2, y_2, z_2) , the distance is:
-
-d(p, q) = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2 + (z_2 - z_1)^2}
+\[ d(p, q) = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2 + (z_2 - z_1)^2} \]
 
 
+<div align="center">
+  <img src="![istockphoto-1167267132-612x612](https://github.com/user-attachments/assets/dcf62277-0fcf-44c7-9e57-86adf6416ca5)" alt="Example Image" width="500">
+</div>
 
 
 ![istockphoto-1167267132-612x612](https://github.com/user-attachments/assets/dcf62277-0fcf-44c7-9e57-86adf6416ca5)
@@ -39,25 +38,39 @@ The data has two parts. The first one is provdied in csv format individually for
 
 In reality, raw data often requires a lot of clean up. So, the first parts of my script is to get them in the right format for later logic. Below is the definition of columns that have been used in later algorthim.
 
-From PLA dataframe_:_
+#From PLA dataframe:
 
 SRROGD_um: Die size in X direction
+
 SRRPGD_um: Die size in Y direction
+
 PLADot: Dot Technology
+
 ProcessTag: Fabrication Technology
+
 SRRDieArea_mm2: Die Area in mm2
+
 PLAFabDieArea: Combination of Fabrication Technology and Die Area in mm2
+
 OGDWidthOfPGDScribe_um: Die Space in X direction (return value)
+
 PGDWidthOfOGDScribe_um: Die Space in Y direction (return value)
 
-From Items dataframe_:_
+
+#From Items dataframe:
 
 Die X (um): Die size in X direction
+
 Die Y(um): Die size in Y direction
+
 DotProcess: Dot Technology
+
 FabProcess: Fabrication Technology
+
 DotDieArea: Combination of Dot Technology and Die Area in mm2
+
 FabDieArea: Combination of Fabrication Technology and Die Area in mm2
+
 
 ## Visual Network Design
 
